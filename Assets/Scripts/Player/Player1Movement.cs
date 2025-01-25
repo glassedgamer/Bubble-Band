@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player1Movement : MonoBehaviour
 {
+    private float boundary = 20.8f;
 
     [SerializeField] private Rigidbody2D rb;
 
@@ -24,6 +25,17 @@ public class Player1Movement : MonoBehaviour
         movement = Vector2.zero;
 
         PlayerInput();
+
+        //Player Boundaries
+        if (transform.position.x < -boundary)
+        {
+            transform.position = new Vector2(-boundary, transform.position.y);
+        }
+
+        if (transform.position.x > boundary)
+        {
+            transform.position = new Vector2(boundary, transform.position.y);
+        }
     }
 
 
