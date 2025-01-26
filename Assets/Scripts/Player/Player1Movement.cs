@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player1Movement : MonoBehaviour
 {
@@ -73,11 +74,11 @@ public class Player1Movement : MonoBehaviour
 
     public void GameOver()
     {
-        //turn the UI game over screen on 
-        //button within that screen to reload current scene 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void OnTriggerEnter(Collider other)
+
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Spikes"))
         {

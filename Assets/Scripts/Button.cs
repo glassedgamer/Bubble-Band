@@ -4,30 +4,19 @@ using UnityEngine;
 
 public class Button : MonoBehaviour
 {
-    public GameObject DoorA;
+    public GameObject Door;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void OnTriggerEnter2D(Collider2D other) 
     {  
         if (other.CompareTag("Player")) 
         {
-            DoorA.SetActive(false);
+            Door.SetActive(false);
         }
     }
 
     public void OnTriggerExit2D(Collider2D other)
     {
-        DoorA.SetActive(true);
+        Door.SetActive(true);
     }
 }
