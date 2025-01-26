@@ -51,3 +51,33 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: Jump1
+    clip: {fileID: 8300000, guid: 3725a835b73c1ea46a2afad653bc7b09, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Jump2
+    clip: {fileID: 8300000, guid: 8252634634ec1c64cbb6f1add88ed025, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: HitSpikes
+    clip: {fileID: 8300000, guid: 221d9ed807b346643ad44b832a2dc3d3, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ButtonOn
+    clip: {fileID: 8300000, guid: 5a5d30c6c49325e418e1a414d75ded6b, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Soda
+    clip: {fileID: 8300000, guid: 5994f4f0159938648837d053016cf0b0, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

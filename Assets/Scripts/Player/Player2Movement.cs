@@ -56,6 +56,7 @@ public class Player2Movement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
+            FindObjectOfType<AudioManager>().Play("Jump2");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
     }
@@ -84,6 +85,7 @@ public class Player2Movement : MonoBehaviour
     {
         if (other.CompareTag("Spikes"))
         {
+            FindObjectOfType<AudioManager>().Play("HitSpikes");
             GameOver();
         }
     }

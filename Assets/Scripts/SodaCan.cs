@@ -20,6 +20,8 @@ public class SodaCan : MonoBehaviour
 
         if (collision.gameObject.name == "Player" || collision.gameObject.name == "Player 2")
         {
+
+            FindObjectOfType<AudioManager>().Play("Soda");
             playersColliding++;
 
             // Check if both players are now colliding
