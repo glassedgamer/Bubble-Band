@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Door A
   - Slab
+  - Button
+  - Spikes
   layers:
   - Default
   - TransparentFX

@@ -70,4 +70,18 @@ public class Player1Movement : MonoBehaviour
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
     }
+
+    public void GameOver()
+    {
+        //turn the UI game over screen on 
+        //button within that screen to reload current scene 
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Spikes"))
+        {
+            GameOver();
+        }
+    }
 }
